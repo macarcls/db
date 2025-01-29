@@ -1,0 +1,41 @@
+﻿<Window x:Class="Kursach.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursach"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="SPRK_default_preset_name_custom – 1.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="164*"/>
+            <ColumnDefinition Width="188*"/>
+            <ColumnDefinition Width="176*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="61*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Content="Добавить рабочий инвентарь" Grid.Row="1" Click="Button_Click_1" Margin="0,0,0,8" Grid.RowSpan="2"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="Добавить транспорт" Click="Button_Click3"/>
+        <Button Grid.Column="1" Margin="0,0,0,8" Grid.Row="3" Content="Добавить недвижимость" Grid.RowSpan="2" Click="Button_Click_2"/>
+        <Button Grid.Column="1" Margin="0,8,0,0" Grid.Row="6" Grid.RowSpan="2" Content="Добавить офисное оборудование" Click="Button_Click_4"/>
+        <Button Margin="0,8,0,0" Grid.RowSpan="2" Grid.Column="3" Grid.Row="8" Content="Проверить цену" Click="Check_Price"/>
+        <Button Grid.Column="3" Grid.Row="6" Content="Перенести в EXCEL" Margin="0,6,0,2" Grid.RowSpan="2" Click="Button_Click"/>
+    </Grid>
+</Window>
